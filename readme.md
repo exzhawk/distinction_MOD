@@ -1,3 +1,13 @@
+This WordPress theme is originally written by [WP Ninjas](http://wpninjas.com/)
+
+This repository has been modified as post below before upload to GitHub
+http://blog.exz.me/2013/distinction-theme-modify/
+
+
+Below is original readme.txt
+
+
+
 WP Ninjas Distinction WordPress Theme Readme.txt
 ------------------------------------------------
 

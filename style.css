@@ -598,11 +598,11 @@ div.menu li {
 	-moz-border-radius-bottomright: 5px; 
 	-moz-border-radius-bottomleft: 5px; 
 	float:right;
-	height: 38pxpx;
+	height: 38px;
 	padding:6px;
 }
 #searchform #s {
-	background:url(images/search-bg.png) no-repeat; -1px -1px;
+	background:url(images/search-bg.png) no-repeat;
 	border:0;
 	font-size:14px;
 	line-height:26px;
