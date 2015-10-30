@@ -80,9 +80,23 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
 #container {
-    float: left;
-    margin: 0 -270px 0 0;
-    width: 1105px;
+    /*float: left;*/
+    /*margin: 0 -270px 0 0;*/
+    /*width: 1105px;*/
+}
+
+@media (max-width: 1199px) {
+    #container {
+        margin-left: calc(50% - 300px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrap {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
 }
 
 #content {
@@ -112,7 +126,7 @@ DESCRIPTION: One centered column with no sidebar
 
 .one-column #content {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 /*
@@ -122,7 +136,7 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 
 .single-attachment #content {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 /* =Fonts
@@ -176,12 +190,12 @@ code {
 
 #main {
     margin: 0 auto;
-    width: 1205px;
+    max-width: 1205px;
 }
 
 #colophon {
     margin: 0 auto;
-    width: 1184px;
+    /*width: 1184px;*/
 }
 
 #wrapper {
@@ -548,7 +562,7 @@ a:hover {
     background: #222;
     display: block;
     margin: 0 auto;
-    width: 1180px;
+    /*width: 1180px;*/
     height: 38px;
 }
 
@@ -672,12 +686,12 @@ div.menu li {
     -moz-border-radius-bottomright: 5px;
     -moz-border-radius-bottomleft: 5px;
     float: right;
-    height: 38px;
+    /*height: 38px;*/
     padding: 6px;
 }
 
 #searchform #s {
-    background: url(images/search-bg.png) no-repeat;
+    background: url(images/search-bg.png) no-repeat !important;
     border: 0;
     font-size: 14px;
     line-height: 26px;
@@ -1027,14 +1041,15 @@ tr.odd td {
 }
 
 .wrap {
-    width: 1200px;
+    /*width: 1200px;*/
+    max-width: 1200px;
     overflow: hidden;
 }
 
 .post {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
     background: none repeat scroll 0 0 #f1f1f1;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1042,6 +1057,8 @@ tr.odd td {
     color: #7B7D83;
     margin: 10px;
     width: 579px;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .post a {
@@ -1051,7 +1068,7 @@ tr.odd td {
 
 .post-inner {
     background: none repeat scroll 0 0 transparent;
-    border: 3px solid rgba(0, 0, 0, 0.1);
+    /*border: 3px solid rgba(0, 0, 0, 0.1);*/
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1166,7 +1183,7 @@ tr.odd td {
 }
 
 .format-status .post-inner {
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    /*border: 3px solid rgba(255, 255, 255, 0.6);*/
 }
 
 .format-status .utility .format-icons {
@@ -1187,7 +1204,7 @@ tr.odd td {
 }
 
 .format-link .post-inner {
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    /*border: 3px solid rgba(255, 255, 255, 0.6);*/
 }
 
 .format-link .utility .format-icons {
@@ -1218,7 +1235,7 @@ tr.odd td {
 }
 
 .format-audio .post-inner {
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    /*border: 3px solid rgba(255, 255, 255, 0.6);*/
 }
 
 .format-audio .utility .format-icons {
@@ -1235,7 +1252,7 @@ tr.odd td {
 }
 
 .format-quote .post-inner {
-    border: 3px solid rgba(0, 0, 0, 0.6);
+    /*border: 3px solid rgba(0, 0, 0, 0.6);*/
 }
 
 .format-quote blockquote {
@@ -1290,7 +1307,7 @@ tr.odd td {
 }
 
 .format-video .post-inner {
-    border: 3px solid rgba(0, 0, 0, 0.6);
+    /*border: 3px solid rgba(0, 0, 0, 0.6);*/
 }
 
 .format-video .post-inner .entry a {
