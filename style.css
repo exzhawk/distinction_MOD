@@ -195,7 +195,7 @@ code {
 
 #colophon {
     margin: 0 auto;
-    /*width: 1184px;*/
+    max-width: 1184px;
 }
 
 #wrapper {
@@ -562,7 +562,7 @@ a:hover {
     background: #222;
     display: block;
     margin: 0 auto;
-    /*width: 1180px;*/
+    max-width: 1180px;
     height: 38px;
 }
 
