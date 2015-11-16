@@ -725,7 +725,7 @@ var {
 }
 
 code {
-    font-size: 13px;
+    /*font-size: 13px;*/
 }
 
 dt,
@@ -1974,7 +1974,7 @@ h3#reply-title {
 }
 
 #respond .form-allowed-tags code {
-    font-size: 11px;
+    /*font-size: 11px;*/
 }
 
 #respond .form-submit {
