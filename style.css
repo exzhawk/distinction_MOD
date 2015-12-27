@@ -80,7 +80,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
 #container {
-    /*float: left;*/
+    float: left;
     /*margin: 0 -270px 0 0;*/
     /*width: 1105px;*/
 }
@@ -100,7 +100,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 }
 
 #content {
-    margin: 0 280px 0 10px;
+    /*margin: 0 280px 0 10px;*/
 }
 
 #primary,
